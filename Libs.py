@@ -21,12 +21,11 @@ def get_llm(streaming_callback):
         ) 
     
     return llm
-
     
 def get_rag_chat_response(question, context, streaming_callback): 
     llm = get_llm(streaming_callback)
-    system_prompt = """System: You are a helpful customer support assistant. 
-    Only anwser related to customer support content provided
+    system_prompt = """System: You are a customer support assistant. Anwser in very customer obsesion style
+    Only anwser related to customer support document provide in the <text> tag content provided. Say I don't know if the question does not related to provide content in <text> tag
     This is your customer support content: """ + "<text>" + str(context) + "</text>"""
     user_prompt = "User: " + question
     prompt = "System:" + system_prompt + "\n\nHuman: " + user_prompt + "\n\nAssistant:"
