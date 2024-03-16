@@ -1,5 +1,5 @@
 import streamlit as st 
-import Libs as glib 
+import Home_lib as glib 
 from langchain.callbacks import StreamlitCallbackHandler
 from PyPDF2 import PdfReader
 

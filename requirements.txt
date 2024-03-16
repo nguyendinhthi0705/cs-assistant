@@ -12,3 +12,4 @@ PyPDF2
 pypdf
 langchain_community
 python-dotenv
+faiss-cpu
