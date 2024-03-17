@@ -13,7 +13,7 @@ Setup <a href='https://docs.aws.amazon.com/cli/latest/userguide/getting-started-
 > streamlit run Home.py --server.port 8080 <br />
 
 # Architecture
-![Architecture 01](./architecture.png)
+![Architecture](./Architecture.png)
 
 # Learn more about prompt
 <a href="https://docs.anthropic.com/claude/docs/introduction-to-prompt-design" target="_blank">Introduction to prompt design </a>
